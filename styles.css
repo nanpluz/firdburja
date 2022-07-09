@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(255, 255, 78);
+
+  font-family: 'Dancing Script', sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+img {
+  width: 20vw;
+}
+
+@keyframes neto{
+  from{
+    transform: rotateY(0deg)
+  }
+  to{
+    transform: rotateY(360deg)
+  }
+}
+
+img{
+  position: absolute;
+
+  animation-name: neto;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.hide{
+  opacity: 0;
+}
+
+@keyframes Renan{
+  from{
+    transform: rotateX(0deg)
+  }
+  to{
+    transform: rotateX(360deg)
+  }
+}
+
+p{
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 80px;
+  font-weight: 900;
+
+  animation-name: Renan;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+button{
+  background-color: purple;
+  width: 150px;
+  height: 130px;
+
+  font-size: 35px;
+  font-family: 'Dancing Script', sans-serif;
+  font-weight: 900;
+
+  color: white;
+
+  position: absolute;
+  left: 30%;
+  bottom: 20px;
+}
